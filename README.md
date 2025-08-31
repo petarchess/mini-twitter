@@ -41,13 +41,18 @@ Follow these steps to get the application running on your local machine.
 - A local database server (e.g., MySQL via Laragon, XAMPP)  
 
 ### 1. Clone the Repository
-```bash
+
+```
 git clone https://github.com/your-username/mini-twitter.git
 cd mini-twitter
 ```
+
 ### 2. Install Dependencies
+
+```
 composer install
 npm install
+```
 
 ### 3. Set Up Environment File
 ```
@@ -68,6 +73,7 @@ DB_PASSWORD=
 (Ensure you create a database named mini_twitter in your database client.)
 
 ### 4. Generate Application Key
+
 ```
 php artisan key:generate
 ```
