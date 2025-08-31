@@ -45,37 +45,49 @@ Follow these steps to get the application running on your local machine.
 git clone https://github.com/your-username/mini-twitter.git
 cd mini-twitter
 ```
-2. Install Dependencies
+### 2. Install Dependencies
 composer install
 npm install
 
-3. Set Up Environment File
+### 3. Set Up Environment File
+```
 cp .env.example .env
-
+```
 
 Now, open the .env file and configure your database connection details:
 
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=mini_twitter
 DB_USERNAME=root
 DB_PASSWORD=
-
+```
 
 (Ensure you create a database named mini_twitter in your database client.)
 
-4. Generate Application Key
+### 4. Generate Application Key
+```
 php artisan key:generate
+```
 
-5. Run Database Migrations and Seeding
+### 5. Run Database Migrations and Seeding
 
 This will create all the necessary tables and populate them with sample data:
 
+```
 php artisan migrate:fresh --seed
+```
 
-6. Compile Frontend Assets
+### 6. Compile Frontend Assets
+
+```
 npm run dev
+```
 
-7. Start the Development Server
+### 7. Start the Development Server
+
+```
 php artisan serve
+```
