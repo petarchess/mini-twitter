@@ -44,7 +44,7 @@ Follow these steps to get the application running on your local machine.
 ```bash
 git clone https://github.com/your-username/mini-twitter.git
 cd mini-twitter
-
+```
 2. Install Dependencies
 composer install
 npm install
